@@ -1,33 +1,50 @@
 {
     "manifest_version": 3,
     "default_locale": "en",
-
     "name": "__MSG_extension_name__",
     "description": "__MSG_extension_description__",
     "version": "1.0",
-
     "icons": {
         "48": "images/icon-48.png",
         "96": "images/icon-96.png",
-        "128": "images/icon-128.png",
-        "256": "images/icon-256.png",
-        "512": "images/icon-512.png"
+        "128": "images/icon-128.png"
     },
-
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*", "*://youtube.com/*", "*://m.youtube.com/*"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ],
     "background": {
-        "scripts": [ "background.js" ],
-        "type": "module"
+        "service_worker": "background.js"
     },
-
-    "content_scripts": [{
-        "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
-    }],
-
     "action": {
         "default_popup": "popup.html",
-        "default_icon": "images/toolbar-icon.svg"
+        "default_icon": "images/icon-48.png"
     },
-
-    "permissions": [ ]
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "commands": {
+        "toggleSidebar": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+S"
+            },
+            "description": "Toggle YouTube sidebar visibility"
+        },
+        "toggleComments": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+C"
+            },
+            "description": "Toggle YouTube comments visibility"
+        }
+    },
+    "host_permissions": [
+        "*://www.youtube.com/*",
+        "*://youtube.com/*",
+        "*://m.youtube.com/*"
+    ]
 }
+

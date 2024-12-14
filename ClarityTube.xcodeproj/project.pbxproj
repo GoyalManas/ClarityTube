@@ -66,6 +66,7 @@
 			membershipExceptions = (
 				"/Localized: Resources/Main.html",
 				Assets.xcassets,
+				ContentView.swift,
 				Resources/Icon.png,
 				Resources/Script.js,
 				Resources/Style.css,
@@ -92,6 +93,7 @@
 			membershipExceptions = (
 				"/Localized: Resources/Main.html",
 				Assets.xcassets,
+				ContentView.swift,
 				Resources/Icon.png,
 				Resources/Script.js,
 				Resources/Style.css,
@@ -111,6 +113,7 @@
 			membershipExceptions = (
 				Resources/_locales,
 				Resources/background.js,
+				Resources/content.css,
 				Resources/content.js,
 				Resources/images,
 				Resources/manifest.json,
@@ -126,6 +129,7 @@
 			membershipExceptions = (
 				Resources/_locales,
 				Resources/background.js,
+				Resources/content.css,
 				Resources/content.js,
 				Resources/images,
 				Resources/manifest.json,
@@ -549,6 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -558,7 +563,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ManasGoyal.ClarityTube.ClarityTube;
 				PRODUCT_NAME = ClarityTube;
+				REGISTER_APP_GROUPS = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -586,6 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -595,7 +605,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ManasGoyal.ClarityTube.ClarityTube;
 				PRODUCT_NAME = ClarityTube;
+				REGISTER_APP_GROUPS = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -620,7 +634,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -652,7 +666,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -685,7 +699,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -719,7 +733,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
 					"-framework",

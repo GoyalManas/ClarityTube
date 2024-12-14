@@ -1,0 +1,39 @@
+/* Hide related video sidebar */
+#secondary,
+ytd-watch-next-secondary-results-renderer,
+ytd-mini-guide-renderer,
+#related,
+.ytd-watch-next-secondary-results-renderer {
+    display: none !important;
+}
+
+/* Hide comments section */
+ytd-comments,
+#comments,
+.comments,
+.ytd-comments {
+    display: none !important;
+}
+
+/* Hide homepage suggestions */
+ytd-rich-grid-renderer,
+#chips-wrapper,
+#contents,
+#sections,
+.ytd-rich-grid-renderer {
+    display: none !important;
+}
+
+/* Hide trending or explore sections */
+ytd-browse,
+#guide,
+.ytd-mini-guide-renderer {
+    display: none !important;
+}
+
+/* General mobile-specific tweaks */
+#sections,
+.mobile-topbar-header {
+    display: none !important;
+}
+

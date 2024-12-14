@@ -1,10 +1,9 @@
 {
     "extension_name": {
-        "message": "ClarityTube",
-        "description": "The display name for the extension."
+        "message": "ClarityTube"
     },
     "extension_description": {
-        "message": "This is ClarityTube. You should tell us what your extension does here.",
-        "description": "Description of what the extension does."
+        "message": "ClarityTube hides distracting elements on YouTube for better focus."
     }
 }
+
